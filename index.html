@@ -1,81 +1,172 @@
-AI 学习清单
-两周轻节奏 · 每天 20-30 分钟 · 不装环境、不写代码、不打卡
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 学习清单 · 两周轻节奏</title>
+<style>
+  :root{
+    --bg:#F7F7F5; --card:#FFFFFF; --ink:#2C2C2A; --muted:#5F5E5A;
+    --line:#E3E1DA; --blue:#185FA5; --blue-bg:#E6F1FB;
+    --green:#3B6D11; --green-bg:#EAF3DE; --amber:#854F0B; --amber-bg:#FAEEDA;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    font-size:16px;line-height:1.8;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:780px;margin:0 auto;padding:36px 20px 64px}
+  .kicker{font-size:13px;color:var(--muted);letter-spacing:.04em}
+  h1{font-size:30px;line-height:1.35;margin:10px 0 8px;font-weight:600}
+  .lead{font-size:17px;margin:0 0 6px;color:var(--ink)}
+  .meta{font-size:13px;color:var(--muted);margin:0}
+  .hero{padding-bottom:24px;border-bottom:1px solid var(--line);margin-bottom:24px}
+  .nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 32px}
+  .nav a{font-size:13px;text-decoration:none;color:var(--blue);background:var(--blue-bg);
+    border:1px solid #CFE1F5;border-radius:999px;padding:5px 12px}
+  h2{font-size:20px;font-weight:600;margin:40px 0 6px;padding-left:12px;border-left:4px solid var(--green)}
+  h2 .n{font-size:13px;color:var(--muted);font-weight:400;margin-left:8px}
+  .hint{font-size:14px;color:var(--muted);margin:0 0 16px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:12px;
+    padding:18px 20px;margin:14px 0}
+  .card h3{font-size:17px;margin:0 0 6px;font-weight:600}
+  .card h3 .idx{display:inline-block;min-width:24px;height:24px;line-height:24px;text-align:center;
+    background:var(--green-bg);color:var(--green);border-radius:6px;font-size:13px;margin-right:8px}
+  .card p{margin:6px 0 0;font-size:15px}
+  .why{margin-top:10px;padding:9px 12px;background:var(--blue-bg);border-radius:8px;
+    font-size:14px;color:#0C447C}
+  .badge{display:inline-block;font-size:12px;color:var(--muted);background:var(--bg);
+    border:1px solid var(--line);border-radius:6px;padding:1px 8px;margin-left:6px;vertical-align:middle}
+  a{color:var(--blue);text-decoration:none;word-break:break-all}
+  a:hover{text-decoration:underline}
+  .src{font-size:13px;color:var(--muted);margin-top:8px}
+  ul{padding-left:20px;margin:10px 0}
+  li{margin:9px 0;font-size:15px}
+  li b{font-weight:600}
+  .note{background:var(--amber-bg);border:1px solid #EFD9A8;border-radius:12px;
+    padding:16px 20px;margin:16px 0;font-size:15px}
+  .note strong{color:var(--amber)}
+  .word{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
+  .word div{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+  .word b{display:block;font-size:15px;margin-bottom:4px;color:var(--green)}
+  .word span{font-size:14px;color:var(--muted);line-height:1.7}
+  .chain{background:var(--card);border:1px solid var(--line);border-radius:10px;
+    padding:14px 18px;font-size:15px;margin-top:14px}
+  .step{display:flex;gap:14px;margin:12px 0;align-items:flex-start}
+  .step .t{flex:0 0 92px;font-size:14px;color:var(--green);font-weight:600;padding-top:2px}
+  .step .d{flex:1;font-size:15px}
+  .warn li{color:#712B13}
+  footer{margin-top:48px;padding-top:20px;border-top:1px solid var(--line);
+    font-size:13px;color:var(--muted);line-height:1.9}
+  @media (max-width:520px){
+    .wrap{padding:24px 16px 48px} h1{font-size:25px} h2{font-size:18px}
+    .card{padding:15px 16px} .step{flex-direction:column;gap:2px} .step .t{flex:auto}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
 
-筛选标准：中文优先、零基础能看、不用配环境；只记「这东西能帮我省什么事」
+  <div class="hero">
+    <div class="kicker">小八整理 · 2026-11-11 · 可公开版</div>
+    <h1>AI 学习清单</h1>
+    <p class="lead">两周轻节奏 · 每天 20-30 分钟 · 不装环境、不写代码、不打卡</p>
+    <p class="meta">筛选标准：中文优先、零基础能看、不用配环境；只记「这东西能帮我省什么事」</p>
+  </div>
 
-今天的第一课
-先看这 3 本
-横向对比
-框架清单
-躺着学
-两周节奏
-避坑
-今天的第一课：先搞懂 5 个词第 1-3 天，20 分钟就够
-这 5 个词是所有 AI 教程的地基。搞懂它们，后面看到新名词就不慌了。
+  <div class="nav">
+    <a href="#lesson">今天的第一课</a>
+    <a href="#three">先看这 3 本</a>
+    <a href="#compare">横向对比</a>
+    <a href="#framework">框架清单</a>
+    <a href="#media">躺着学</a>
+    <a href="#plan">两周节奏</a>
+    <a href="#avoid">避坑</a>
+  </div>
 
-模型
-AI 的「脑子」。读过海量文字，擅长按上下文接着说。不同模型像不同性格的助理，有的严谨，有的发散。
-Prompt 提示词
-你交给它的那段话。说清「要什么、给谁看、什么格式」，结果差别最大——这是最值得练的基本功。
-Agent 智能体
-会自己拆步骤、调工具、把活干完的 AI。普通聊天只给答案，Agent 交付结果（文件、表格、网页）。
-Skill / 连接器
-给 Agent 接上的「手脚」。Skill 是一项本领，连接器是通往外部账号和服务的通道，比如 GitHub、腾讯文档。
-RAG 检索增强
-先去你自己的资料里翻，再回答。让 AI 讲你的笔记，而不是凭记忆瞎编。
-一句话串起来：模型负责想，Prompt 负责说清，Agent 负责干，Skill / 连接器负责伸手，RAG 负责查资料。你现在用的 WorkBuddy，就是「模型 + Agent + 连接器」的组合。
-一、先看这 3 本按这个顺序，最贴目标
-1liyupi/ai-guide22,007 星
-程序员鱼皮的 AI 资源大全 + 零基础教程。含 Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 工具用法、开发框架教程。
+  <h2 id="lesson">今天的第一课：先搞懂 5 个词<span class="n">第 1-3 天，20 分钟就够</span></h2>
+  <p class="hint">这 5 个词是所有 AI 教程的地基。搞懂它们，后面看到新名词就不慌了。</p>
+  <div class="word">
+    <div><b>模型</b><span>AI 的「脑子」。读过海量文字，擅长按上下文接着说。不同模型像不同性格的助理，有的严谨，有的发散。</span></div>
+    <div><b>Prompt 提示词</b><span>你交给它的那段话。说清「要什么、给谁看、什么格式」，结果差别最大——这是最值得练的基本功。</span></div>
+    <div><b>Agent 智能体</b><span>会自己拆步骤、调工具、把活干完的 AI。普通聊天只给答案，Agent 交付结果（文件、表格、网页）。</span></div>
+    <div><b>Skill / 连接器</b><span>给 Agent 接上的「手脚」。Skill 是一项本领，连接器是通往外部账号和服务的通道，比如 GitHub、腾讯文档。</span></div>
+    <div><b>RAG 检索增强</b><span>先去你自己的资料里翻，再回答。让 AI 讲你的笔记，而不是凭记忆瞎编。</span></div>
+  </div>
+  <div class="chain"><b>一句话串起来：</b>模型负责想，Prompt 负责说清，Agent 负责干，Skill / 连接器负责伸手，RAG 负责查资料。你现在用的 WorkBuddy，就是「模型 + Agent + 连接器」的组合。</div>
 
-为什么先看：全中文、零基础，覆盖面正好是「框架入门 + 怎么跟 AI 说话」，一本顶好几篇帖子。
-2AlephAITech/WorkBuddyGuide3,798 星
-开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。
+  <h2 id="three">一、先看这 3 本<span class="n">按这个顺序，最贴目标</span></h2>
 
-为什么看：直接对应「先熟练掌握和 WorkBuddy 的交流、体验功能」，相当于手边这本工具的说明书。
-3KimYx0207/AI-Coding-Guide-Zh6,486 星
-Claude Code + OpenClaw + Codex + WorkBuddy 中文教程：50 篇完整教程 + 1 张速查卡 + 四线学习路径（编程 / 助手 / Agent / 办公）。
+  <div class="card">
+    <h3><span class="idx">1</span><a href="https://github.com/liyupi/ai-guide" target="_blank">liyupi/ai-guide</a><span class="badge">22,007 星</span></h3>
+    <p>程序员鱼皮的 AI 资源大全 + 零基础教程。含 Prompt 提示词大全、AI 知识百科（Agent Skills / RAG / MCP / A2A）、AI 工具用法、开发框架教程。</p>
+    <div class="why">为什么先看：全中文、零基础，覆盖面正好是「框架入门 + 怎么跟 AI 说话」，一本顶好几篇帖子。</div>
+  </div>
 
-为什么看：把 WorkBuddy 和 GPT 系工具放在同一条路径里讲，是做横向对比最好的起点。
-二、WorkBuddy vs GPT / OpenAI 怎么比
-GitHub 上没有官方横评仓库，但中文横评写得很扎实，看这三篇就够：
+  <div class="card">
+    <h3><span class="idx">2</span><a href="https://github.com/AlephAITech/WorkBuddyGuide" target="_blank">AlephAITech/WorkBuddyGuide</a><span class="badge">3,798 星</span></h3>
+    <p>开源的 WorkBuddy 实战蓝皮书：教程、真实工作流、Skills、MCP、自动化与多智能体实践。</p>
+    <div class="why">为什么看：直接对应「先熟练掌握和 WorkBuddy 的交流、体验功能」，相当于手边这本工具的说明书。</div>
+  </div>
 
-新版 ChatGPT vs WorkBuddy：谁更像真正的 AI 同事？（公众号「环网ai」）
-含 8 个维度对比表。结论：新版 ChatGPT 更像能力全面的 AI 超级工作台，WorkBuddy 更像强调本地执行、模型自由和国内办公生态的数字同事。
-智能体怎么选？WorkBuddy、QoderWork、ChatGPT 深度横评
-三家对比：产品形态、核心能力、能不能真干活、国内访问、学习成本、价格。里面那句「ChatGPT 像博学但不动手的顾问，WorkBuddy 像全能行政助理」最好懂。
-WorkBuddy vs Doubao Office vs ChatGPT Desktop（TechMinds，第三方 3 个月实测，英文）
-一句判断：如果你日常是远程办公为主、看重记录复盘、希望工具直接把活干完——差别不在「谁答得更聪明」，而在「谁把活干完」。GPT 给建议和内容、活还得自己动手；WorkBuddy 直接交付文件、能连国内办公生态、能定时自己跑。建议先把一个用熟，再横向比，比出来的才是真感受。
-注：价格、积分、功能描述均为 2026 年中第三方观点，产品月月更新，以官方最新为准。
-三、AI 框架 / 大模型入门
-这些当「目录」翻就行，不用装、不用跑代码。
+  <div class="card">
+    <h3><span class="idx">3</span><a href="https://github.com/KimYx0207/AI-Coding-Guide-Zh" target="_blank">KimYx0207/AI-Coding-Guide-Zh</a><span class="badge">6,486 星</span></h3>
+    <p>Claude Code + OpenClaw + Codex + WorkBuddy 中文教程：50 篇完整教程 + 1 张速查卡 + 四线学习路径（编程 / 助手 / Agent / 办公）。</p>
+    <div class="why">为什么看：把 WorkBuddy 和 GPT 系工具放在同一条路径里讲，是做横向对比最好的起点。</div>
+  </div>
 
-AiHubCN/Awesome-Chinese-LLM22,781 星 — 中文大模型整理，含教程与数据集，中文最友好
-Shubhamsaboo/awesome-llm-apps144,389 星 — 100+ AI Agent 真实实例，光看项目列表就能长见识
-Hannibal046/Awesome-LLM27,498 星 — 经典论文 / 资源清单，英文，当字典查
-dair-ai/Prompt-Engineering-Guide79,980 星 — 提示词、上下文工程、RAG、Agent 全套指南，想让 AI 更听话时翻
-patchy631/ai-engineering-hub41,733 星 — LLM / RAG / Agent 深入教程，偏动手，后期再看
-shareAI-lab/learn-claude-code80,248 星 — 中文团队写的「从 0 到 1 造一个 Agent」，想理解框架原理时看
-四、B站 / 播客 / 社区躺着也能学
-播客《十字路口 crossing》（小宇宙 App）：一线 AI 创业者访谈，适合先刷新认知。优先听张咋啦、刘小排那两期。
-WaytoAGI：中文最大 AI 社区之一，教程开源免费，提示词、作图、工具用法都有，公众号可搜到。
-B站 UP 主「秋芝2046」：小白教程讲得最细，Skill 到底是什么、怎么用，适合语音 / 视频学习。
-B站「靠脸吃饭的汤大王」《小白第一次使用腾讯的小龙虾》：WorkBuddy 入门体验，5.4 万播放。
-焦建利老师的「B站 AI 学习日报」：按播放量、三连率、内容深度筛过，20+ 精选视频直达 B站，还有 WorkBuddy 专区。
-第 001 期 · 第 005 期
-公开整理的 B站 BV 号（失效就直接搜标题）：吴恩达提示词工程教程 BV1173jzNELG、3 天速通大模型 BV1hy5YzaErV。
-整理页 · 信息源出处
-五、两周轻节奏每天 20-30 分钟
-第 1-3 天
-翻 liyupi/ai-guide 的「AI 知识百科」，只搞懂上面那 5 个词。
-第 4-7 天
-照 WorkBuddyGuide 试 1 个真实工作流（比如让 AI 把一段语音整理成笔记）；顺手听 1 期《十字路口》。
-第 8-10 天
-看两篇横评，自己写一页「我为什么用 WorkBuddy、什么场景会想用 GPT」——这页就是现成的复盘素材。
-第 11-14 天
-从 awesome-llm-apps 里挑 3 个看得懂的项目，各记一句「它能替人省什么事」。
-原则：不装环境、不写代码、不打卡；身体不舒服就跳过，不补卡、不欠账。看不懂也跳过，只记「这东西能帮我省什么事」。
-六、主动排除掉的免得踩坑
-workbuddy2api-* / 账号池 / 反代网关类仓库（约 2,600-4,800 星）：把账号转成 API、批量签到、账号池管理，属第三方工具，有服务条款和账号安全风险，用不上，别碰。
-需要配环境、跑代码、读英文论文的教程：低强度期不折腾，等有兴趣再说。
-临时邮箱、破解、薅积分一类的东西：一律不碰。
+  <h2 id="compare">二、WorkBuddy vs GPT / OpenAI 怎么比</h2>
+  <p class="hint">GitHub 上没有官方横评仓库，但中文横评写得很扎实，看这三篇就够：</p>
+  <ul>
+    <li><b><a href="http://mp.weixin.qq.com/s?__biz=MzY5NDM2NzE1OQ==&mid=2247484338&idx=1&sn=ba07ca1fab89315d4ba14edcc76ab050" target="_blank">新版 ChatGPT vs WorkBuddy：谁更像真正的 AI 同事？</a></b>（公众号「环网ai」）<br>含 8 个维度对比表。结论：新版 ChatGPT 更像能力全面的 AI 超级工作台，WorkBuddy 更像强调本地执行、模型自由和国内办公生态的数字同事。</li>
+    <li><b><a href="http://mp.weixin.qq.com/s?__biz=MzU2MzY5MDAyNw==&mid=2247483922&idx=1&sn=cc2c5ae2a240c132ed2df070dd530471" target="_blank">智能体怎么选？WorkBuddy、QoderWork、ChatGPT 深度横评</a></b><br>三家对比：产品形态、核心能力、能不能真干活、国内访问、学习成本、价格。里面那句「ChatGPT 像博学但不动手的顾问，WorkBuddy 像全能行政助理」最好懂。</li>
+    <li><b><a href="https://techminds.cn/blog/workbuddy-vs-doubao-office-vs-chatgpt-desktop" target="_blank">WorkBuddy vs Doubao Office vs ChatGPT Desktop</a></b>（TechMinds，第三方 3 个月实测，英文）</li>
+  </ul>
+  <div class="note"><strong>一句判断：</strong>如果你日常是远程办公为主、看重记录复盘、希望工具直接把活干完——差别不在「谁答得更聪明」，而在「谁把活干完」。GPT 给建议和内容、活还得自己动手；WorkBuddy 直接交付文件、能连国内办公生态、能定时自己跑。<b>建议先把一个用熟，再横向比</b>，比出来的才是真感受。<br><span class="src">注：价格、积分、功能描述均为 2026 年中第三方观点，产品月月更新，以官方最新为准。</span></div>
+
+  <h2 id="framework">三、AI 框架 / 大模型入门</h2>
+  <p class="hint">这些当「目录」翻就行，不用装、不用跑代码。</p>
+  <ul>
+    <li><b><a href="https://github.com/AiHubCN/Awesome-Chinese-LLM" target="_blank">AiHubCN/Awesome-Chinese-LLM</a></b><span class="badge">22,781 星</span> — 中文大模型整理，含教程与数据集，中文最友好</li>
+    <li><b><a href="https://github.com/Shubhamsaboo/awesome-llm-apps" target="_blank">Shubhamsaboo/awesome-llm-apps</a></b><span class="badge">144,389 星</span> — 100+ AI Agent 真实实例，光看项目列表就能长见识</li>
+    <li><b><a href="https://github.com/Hannibal046/Awesome-LLM" target="_blank">Hannibal046/Awesome-LLM</a></b><span class="badge">27,498 星</span> — 经典论文 / 资源清单，英文，当字典查</li>
+    <li><b><a href="https://github.com/dair-ai/Prompt-Engineering-Guide" target="_blank">dair-ai/Prompt-Engineering-Guide</a></b><span class="badge">79,980 星</span> — 提示词、上下文工程、RAG、Agent 全套指南，想让 AI 更听话时翻</li>
+    <li><b><a href="https://github.com/patchy631/ai-engineering-hub" target="_blank">patchy631/ai-engineering-hub</a></b><span class="badge">41,733 星</span> — LLM / RAG / Agent 深入教程，偏动手，后期再看</li>
+    <li><b><a href="https://github.com/shareAI-lab/learn-claude-code" target="_blank">shareAI-lab/learn-claude-code</a></b><span class="badge">80,248 星</span> — 中文团队写的「从 0 到 1 造一个 Agent」，想理解框架原理时看</li>
+  </ul>
+
+  <h2 id="media">四、B站 / 播客 / 社区<span class="n">躺着也能学</span></h2>
+  <ul>
+    <li><b>播客《十字路口 crossing》</b>（小宇宙 App）：一线 AI 创业者访谈，适合先刷新认知。优先听张咋啦、刘小排那两期。</li>
+    <li><b>WaytoAGI</b>：中文最大 AI 社区之一，教程开源免费，提示词、作图、工具用法都有，公众号可搜到。</li>
+    <li><b>B站 UP 主「秋芝2046」</b>：小白教程讲得最细，Skill 到底是什么、怎么用，适合语音 / 视频学习。</li>
+    <li><b>B站「靠脸吃饭的汤大王」《小白第一次使用腾讯的小龙虾》</b>：WorkBuddy 入门体验，5.4 万播放。</li>
+    <li><b>焦建利老师的「B站 AI 学习日报」</b>：按播放量、三连率、内容深度筛过，20+ 精选视频直达 B站，还有 WorkBuddy 专区。<br><a href="https://www.jiaojianli.com/22208.html" target="_blank">第 001 期</a> · <a href="https://www.jiaojianli.com/22279.html" target="_blank">第 005 期</a></li>
+    <li><b>公开整理的 B站 BV 号</b>（失效就直接搜标题）：吴恩达提示词工程教程 <code>BV1173jzNELG</code>、3 天速通大模型 <code>BV1hy5YzaErV</code>。<br><a href="https://devpress.csdn.net/xclaw/6a42131b662f9a54cb8587bc.html" target="_blank">整理页</a> · <a href="https://www.sina.cn/news/detail/5295689450916654.html" target="_blank">信息源出处</a></li>
+  </ul>
+
+  <h2 id="plan">五、两周轻节奏<span class="n">每天 20-30 分钟</span></h2>
+  <div class="card">
+    <div class="step"><div class="t">第 1-3 天</div><div class="d">翻 <b>liyupi/ai-guide</b> 的「AI 知识百科」，只搞懂上面那 5 个词。</div></div>
+    <div class="step"><div class="t">第 4-7 天</div><div class="d">照 <b>WorkBuddyGuide</b> 试 1 个真实工作流（比如让 AI 把一段语音整理成笔记）；顺手听 1 期《十字路口》。</div></div>
+    <div class="step"><div class="t">第 8-10 天</div><div class="d">看两篇横评，自己写一页「我为什么用 WorkBuddy、什么场景会想用 GPT」——这页就是现成的复盘素材。</div></div>
+    <div class="step"><div class="t">第 11-14 天</div><div class="d">从 <b>awesome-llm-apps</b> 里挑 3 个看得懂的项目，各记一句「它能替人省什么事」。</div></div>
+  </div>
+  <div class="note"><strong>原则：</strong>不装环境、不写代码、不打卡；身体不舒服就跳过，不补卡、不欠账。看不懂也跳过，只记「这东西能帮我省什么事」。</div>
+
+  <h2 id="avoid">六、主动排除掉的<span class="n">免得踩坑</span></h2>
+  <ul class="warn">
+    <li><code>workbuddy2api-*</code> / 账号池 / 反代网关类仓库（约 2,600-4,800 星）：把账号转成 API、批量签到、账号池管理，属第三方工具，有服务条款和账号安全风险，用不上，别碰。</li>
+    <li>需要配环境、跑代码、读英文论文的教程：低强度期不折腾，等有兴趣再说。</li>
+    <li>临时邮箱、破解、薅积分一类的东西：一律不碰。</li>
+  </ul>
+
+  <footer>
+    资料来源：GitHub 连接器实测搜索 + 联网检索，整理于 2026-11-11；star 数是当时数值，会变化。<br>
+    本页为<b>脱敏可公开版</b>，已去除个人与健康相关信息；原稿与打卡表存于本地笔记库，不随本页发布。<br>
+    由小八整理 · 6 步计划第 4 步产物
+  </footer>
+
+</div>
+</body>
+</html>
+
